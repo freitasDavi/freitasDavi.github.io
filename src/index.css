@@ -6,6 +6,8 @@
   font-family: "Poppins", Helvetica, sans-serif;
 }
 
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
