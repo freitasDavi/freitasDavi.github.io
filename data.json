@@ -1,0 +1,39 @@
+{
+    "data": [
+        {
+            "nome": "React",
+            "nomeImagem": "./assets/react.svg",
+            "descricao": "Knowledge of ReactJS ecosystem, including state librarys such as Redux, Query, Zustand.. CSS in JS library's"
+        },
+        {
+            "nome": "Typescript",
+            "nomeImagem": "./assets/typescript.svg",
+            "descricao": "Typescript é show de bola"
+        }, 
+        {
+            "nome": "Javascript",
+            "nomeImagem": "./assets/javascript.svg",
+            "descricao": "Javascript desde dom até virtual dom"
+        },   
+        {
+            "nome": "C#",
+            "nomeImagem": "./assets/csharp.svg",
+            "descricao": "Knowledge of C#, AspNet framework, "
+        },
+        {
+            "nome": "NodeJS",
+            "nomeImagem": "./assets/node.svg",
+            "descricao": "Eu manjo muuuuito de react"
+        },
+        {
+            "nome": "Vue",
+            "nomeImagem": "./assets/vue.svg",
+            "descricao": "Eu manjo muuuuito de react"
+        },
+        {
+            "nome": "Java",
+            "nomeImagem": "./assets/java.svg",
+            "descricao": "Eu manjo muuuuito de react"
+        }
+    ]
+}
