@@ -1,6 +1,7 @@
 import { LinkedinLogo, GithubLogo, Envelope, Phone, ArrowUp, ArrowDown } from "phosphor-react";
 import useWindowDimension from "./hooks/useWindowDimension";
 import languages from "../data.json";
+import "./index.css"
 
 function App() {
   const {width} = useWindowDimension();
@@ -35,9 +36,9 @@ function App() {
                 <h2 className="text-7xl text-white font-title drop-shadow-md ">developer</h2>
               </div>
               <div className="flex flex-col w-1/3">
-                <a href="#"><h4 className="text-2xl text-white inline hover:underline cursor-pointer">about</h4></a>
-                <a href="#"><h4 className="text-2xl text-white inline hover:underline cursor-pointer">projects</h4></a>
-                <a href="#"><h4 className="text-2xl text-white inline hover:underline cursor-pointer">skills</h4></a>
+                <a href="#find-me"><h4 className="text-2xl text-white inline hover:underline cursor-pointer">about</h4></a>
+                <a href="#skills"><h4 className="text-2xl text-white inline hover:underline cursor-pointer">skills</h4></a>
+                <a href="#projects"><h4 className="text-2xl text-white inline hover:underline cursor-pointer">projects</h4></a>
               </div>
           </div>
           <div className="flex justify-between flex-1 pl-28">
@@ -51,6 +52,10 @@ function App() {
             <a href="#find-me" className="w-12 h-12 rounded-full flex items-center justify-center cursor-pointer bg-lime-300 text-gray-500 hover:bg-lime-500 hover:text-white">
               <ArrowDown size={32} />
             </a>
+          </div>
+
+          <div className="absolute w-full bg-yellow-400 left-0 top-52 p-3 text-xl font-bold flex justify-center">
+            // ESSE SITE ESTÁ EM OBRAS // UNDER CONSTRUCTION //
           </div>
         </div>
         
@@ -94,15 +99,15 @@ function App() {
             <a href="#hi" className="w-12 h-12 rounded-full bg-pink-400 flex items-center justify-center hover:bg-pink-600">
               <ArrowUp size={32} color="#fff" />
             </a>
-            <a href="#hi" className="w-12 h-12 rounded-full flex items-center justify-center cursor-not-allowed bg-gray-500">
+            <a href="#skills" className="w-12 h-12 rounded-full flex items-center justify-center bg-pink-400 hover:bg-pink-600">
               <ArrowDown size={32} color="#fff" />
             </a>
           </div>
           
         </div>
       </div>
-      <div id="skills" className="w-screen h-screen bg-lightin-pink flex justify-center items-center">
-        <div className=" bg-pgray w-11/12 h-[90%] p-16 shadow-lg flex flex-col gap-10 relative">
+      <div id="skills" className="w-screen bg-lightin-pink flex justify-center items-center">
+        <div className="bg-pgray w-11/12 my-8 h-[90%] p-16 shadow-lg flex flex-col gap-10 relative">
           <h2 className="text-7xl md:text-6xl text-white font-title drop-shadow-md">Skills</h2>
           <div className="grid grid-cols-2">
             { data.map(language => {
@@ -116,6 +121,32 @@ function App() {
                 </div>
               )
             }) }
+          </div>
+
+          {/* Botões de Up and Down */}
+          <div className="absolute bottom-12 right-12 flex flex-col gap-6">
+            <a href="#find-me" className="w-12 h-12 rounded-full bg-lime-300 flex items-center justify-center hover:bg-lime-400">
+              <ArrowUp size={32} color="#fff" />
+            </a>
+            <a href="#projects" className="w-12 h-12 rounded-full flex items-center justify-center bg-cyan-300 hover:bg-cyan-500">
+              <ArrowDown size={32} color="#fff" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div id="projects" className="w-screen h-screen bg-cyan-300 flex justify-center items-center">
+        <div className=" bg-pgray w-11/12 h-[90%] flex flex-col gap-5 p-24 shadow-lg relative">
+        <h2 className="text-7xl md:text-6xl text-white font-title drop-shadow-md">Projects</h2>
+          <div className="flex">
+            <img className="rounded-2xl border-2 border-cyan-300" src="https://dummyimage.com/350x250/000/ffffff&text=project+image.png" alt="template image from project" />
+            {/* <div className="w-[350px] h-[250px] bg-yellow-400"></div> */}
+            <div className="flex flex-col">
+              <h3>Next13 Fullstack application </h3>
+              <p>Projeto fullstack feito com Next13, feito serverside first.</p>
+              <div id="tags">
+                typescript next 
+              </div>
+            </div>
           </div>
         </div>
       </div>

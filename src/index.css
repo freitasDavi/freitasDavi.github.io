@@ -6,8 +6,6 @@
   font-family: "Poppins", Helvetica, sans-serif;
 }
 
-
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -23,4 +21,15 @@
 
   color: darkslateblue;
   font-size: 3rem;
+}
+
+//Custom CSS
+.under-construction {
+  background: repeating-linear-gradient(
+    45deg,
+    #fbbf24,
+    #fbbf24 10px,
+    #000 10px,
+    #000 20px
+  );
 }

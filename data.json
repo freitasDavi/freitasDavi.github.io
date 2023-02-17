@@ -8,12 +8,12 @@
         {
             "nome": "Typescript",
             "nomeImagem": "./assets/typescript.svg",
-            "descricao": "Typescript é show de bola"
+            "descricao": "Typescript é show de bola, ajusta o que falta no javascript"
         }, 
         {
             "nome": "Javascript",
             "nomeImagem": "./assets/javascript.svg",
-            "descricao": "Javascript desde dom até virtual dom"
+            "descricao": "Javascript desde dom até virtual dom, async javascript, closures"
         },   
         {
             "nome": "C#",
@@ -23,17 +23,17 @@
         {
             "nome": "NodeJS",
             "nomeImagem": "./assets/node.svg",
-            "descricao": "Eu manjo muuuuito de react"
+            "descricao": "API's com Express e Fastify, ORMs como Prisma e Query builder Knex. Node Streams"
         },
         {
             "nome": "Vue",
             "nomeImagem": "./assets/vue.svg",
-            "descricao": "Eu manjo muuuuito de react"
+            "descricao": "Vue tem tudo pra ser bom, e por isso ja estudei ele bastante, gosto porém falta algo, também ja estudei Nuxt"
         },
         {
             "nome": "Java",
             "nomeImagem": "./assets/java.svg",
-            "descricao": "Eu manjo muuuuito de react"
+            "descricao": "Java a gente até que enrola, aprendi um pouco na faculdade, mas Springboot é show de bola"
         }
     ]
 }
