@@ -1,113 +1,136 @@
+import { ProjectCard } from '@/components/ProjectCard'
+import { TechCard } from '@/components/TechCard'
 import Image from 'next/image'
 
-export default function Home() {
-  return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
+
+{/* <Image
               src="/vercel.svg"
               alt="Vercel Logo"
               className="dark:invert"
               width={100}
               height={24}
               priority
-            />
-          </a>
+            /> */}
+
+export default function Home() {
+  return (
+    <main className="text-white bg-gray-900  p-10 flex flex-col items-center">
+      <nav id="home" className="w-[80%] flex justify-between items-center mb-10">
+        <p className="font-bold font-helvetica italic text-blue-500 lg:text-5xl text-">TKN</p>
+        <ul className="hidden md:flex text-white gap-10 font-helvetica
+      ">
+          <li>
+            <a className="hover:text-blue-500 transition-all ease-in" href="#home">home</a>
+          </li>
+          <li>
+            <a className="hover:text-blue-500 transition-all ease-in" href="#tech">tech</a>
+          </li>
+          <li>
+            <a className="hover:text-blue-500 transition-all ease-in" href="#projects">projects</a>
+          </li>
+          <li>
+            <a className="hover:text-blue-500 transition-all ease-in" href="#contact">contact</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div className="w-[80%] text-right my-10">
+        <h1 className="text-4xl lg:text-8xl  font-helvetica font-bold italic text-slate-200">
+          FULLSTACK DEVELOPER</h1>
+        <h2 className="text-2xl lg:text-8xl font-helvetica font-bold italic text-slate-300">
+          DAVI FREITAS</h2>
+      </div>
+
+      <section className="w-[80%] my-10 pr-10 flex flex-col lg:flex-row justify-between ">
+        <div className="w-full md:w-[55%]  rounded-xl">
+          <img src="/svg/hero.svg" alt="Desenho de uma pessoa ao lado de um monitor pensando" />
         </div>
-      </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
+        <div className="w-full md:w-[40%]">
+          <h3 className="text-xl md:text-4xl font-bold mb-4">Hey 🤙🏼 Welcome!</h3>
+          <p className="text-sm md:text-xl text-left text-slate-200">I'm
+            <b className="italic text-white hover:text-blue-500 hover:cursor-pointer">Davi</b> and I am a systems
+            developer
+            passionate
+            about technology.
+            I
+            am Brazilian, 25 years old and I graduated in systems analysis and development. Since then,
+            I
+            have been working with various technologies, such as C#, Typescript, React, Java and Vue, always looking to
+            update
+            and improve myself. Besides programming, I also like to study, practice sports and play in my spare time. In
+            this
+            portfolio, you will find some of my most interesting and challenging projects, which show a little of my style
+            and
+            skills. I hope you like it and feel free to contact me! 😊
           </p>
-        </a>
+        </div>
+      </section>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
+      <section id="tech" className="bg-blue-500 w-full py-10 flex justify-center">
+        <div className="w-[80%]">
+          <h1 className="text-6xl font-helvetica font-bold italic text-slate-300">tech</h1>
+          <div className="grid md:grid-cols-1 lg:grid-cols-3 my-10 gap-10">
+            <TechCard image="/svg/icons8-c-sharp-logo.svg" title="C#" alt="Logo da linguagem c#" />
+            <TechCard image="/svg/icons8-java.svg" title="Java" alt="Logo da linguagem java" />
+            <TechCard image="/svg/icons8-javascript.svg" title="Javascript" alt="Logo da linguagem javascript" />
+            <TechCard image="/svg/icons8-react-native.svg" title="React" alt="Logo da biblioteca react" />
+            <TechCard image="/svg/icons8-vuejs.svg" title="Vue" alt="Logo da biblioteca vue" />
+          </div>
+        </div>
+      </section>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
+      <section id="projects" className="my-10 w-[80%]">
+        <h1 className="text-6xl font-helvetica font-bold italic text-slate-300">projects</h1>
+        <div className="my-10 grid grid-cols-1 md:grid-cols-2 lg:gap-10">
+          <ProjectCard image="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/cta/cta-dashboard-mockup-dark.svg"
+            title="a-mei - React & Java" alt="dashboard de um sistema de gestão carregando"
+            link="https://github.com/freitasDavi/amei-fe" description="
+          The a-mei software aims to make life easier for Individual Micro Entrepreneurs, offering features such as customer registration, generation of quotes, service orders, assistance in issuing invoices, and also forms of data visualization.
+          " />
+          {/* TODO: PT-BR O software a-mei tem como objetivo facilitar a vida dos Micro Empreendedores Individuais, oferecendo funcionalidades como cadastro de clientes, geração de orçamentos, ordens de serviço, auxílio na emissão de notas fiscais, e também formas de visualização de dados.  */}
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+          <ProjectCard image="https://github.com/freitasDavi/NerdCollection/raw/main/public/Main.jpg"
+            link="https://github.com/freitasDavi/NerdCollection" title="Nerd Collection - NextJS"
+            alt="tela de login com uma imagem de super herois e personagens de jogos"
+            description="
+          Project from the Systems Analysis and Development course with the aim of creating a pseudo social network to catalog collections and connect collectors around the world. For this basic project, which serves as a prototype, Next13 was used with TailwindCSS and Phosphor Icons." />
+          {/* TODO: PT-BR Projeto da faculdade de Análise e Desenvolvimento de Sistemas com intuíto de criar uma pseudo rede social para catalogar coleções e conectar colecionadores ao redor do mundo. Para esse projeto básico, que serve de um protótipo, foi utilizado Next13 com TailwindCSS e Phosphor Icons. */}
+
+          <ProjectCard image="https://github.com/freitasDavi/06-ignite-call/raw/main/public/Main.jpg" title="ICall - NextJS"
+            link="https://github.com/freitasDavi/06-ignite-call"
+            alt="landing page com o título agendamento descomplicado e um calendário"
+            description="
+          Scheduling project integrated with Google Calendar, using Next13 and its powerful kit, taking advantage of both server and client rendering, querying the database via backend routes and authenticating with Google. However, also using ReactQuery on the client side to deal with the different possible scheduling dates. Great work on formatting and operations with dates using the DayJS library." />
+
+          {/* TODO: PT-BR Projeto de agendamento integrado com a Google Agenda, Utilizando Next13 e seu poderoso kit, aproveitando tanto da renderização do servidor quanto do cliente, fazendo consultas ao banco de dados pelas rotas de backend e se autenticando com o google. Porém utilizando também no lado do cliente o ReactQuery para lidar com as diversas datas de possíveis agendamento. Grande trabalho de formatação e operações com datas utilizando a biblioteca DayJS.  */}
+
+          <ProjectCard image="https://github.com/freitasDavi/04-ignite-shop/raw/main/public/Animacao.gif"
+            link="https://github.com/freitasDavi/04-ignite-shop" title="IShop - NextJS"
+            alt="gif animada mostrando o fluxo de compra de um produto"
+            description="
+          Basic Ecommerce project to work with the NextJS framework, also using Stitches to develop styled components and Stripe to make payments, Keen slider to create the slider and using Next's Routes API to guarantee the security of your data." />
+
+          {/* TODO: PT-BR Projeto de Ecommerce básico para trabalhar com o framework NextJS, utilizando também Stitches para desenvolver componentes estilizados e Stripe para realizar pagamentos, Keen slider para criar o slider e utilizando as API Routes do Next para garantir a segurança de seus dados. */}
+        </div>
+      </section>
+
+      <section id="contact" className="bg-slate-800 flex flex-col justify-center items-center w-full p-10">
+        <h4 className="text-4xl text-center font-bold text-slate-200">Thank you for reaching me!
+          <br /> Wanna chat?
+        </h4>
+        <div className="flex gap-6 mt-6 lg:mt-0">
+          <a href="https://github.com/freitasDavi/">
+            <img src="/svg/icons8-github2.svg" alt="Github logo" />
+          </a>
+          <a href="mailto:davi.freitastt@gmail.com">
+            <img src="/svg/icons8-mail.svg" alt="Envelope simbolizando email" />
+          </a>
+          <a href="https://linkedin.com/in/freitasDavi">
+            <img src="/svg/icons8-linkedin.svg" alt="Linkedin logo" />
+          </a>
+
+        </div>
+      </section>
     </main>
   )
 }
