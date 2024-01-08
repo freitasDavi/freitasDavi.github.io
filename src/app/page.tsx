@@ -37,7 +37,7 @@ export default function Home() {
         </div>
         <div className="w-full md:w-[40%]">
           <h3 className="text-xl md:text-4xl font-bold mb-4">Hey 🤙🏼 Welcome!</h3>
-          <p className="text-sm md:text-xl text-left text-slate-200">I'm
+          <p className="text-sm md:text-xl text-left text-slate-200">I&apos;m
             <b className="italic text-white hover:text-blue-500 hover:cursor-pointer">Davi</b> and I am a systems
             developer
             passionate
@@ -98,7 +98,7 @@ export default function Home() {
             link="https://github.com/freitasDavi/04-ignite-shop" title="IShop - NextJS"
             alt="gif animada mostrando o fluxo de compra de um produto"
             description="
-          Basic Ecommerce project to work with the NextJS framework, also using Stitches to develop styled components and Stripe to make payments, Keen slider to create the slider and using Next's Routes API to guarantee the security of your data." />
+          Basic Ecommerce project to work with the NextJS framework, also using Stitches to develop styled components and Stripe to make payments, Keen slider to create the slider and using Next&apos;s Routes API to guarantee the security of your data." />
 
           {/* TODO: PT-BR Projeto de Ecommerce básico para trabalhar com o framework NextJS, utilizando também Stitches para desenvolver componentes estilizados e Stripe para realizar pagamentos, Keen slider para criar o slider e utilizando as API Routes do Next para garantir a segurança de seus dados. */}
         </div>
