@@ -1,44 +1,48 @@
 import { ProjectCard } from '@/components/ProjectCard'
 import { TechCard } from '@/components/TechCard'
+import { Boxes } from '@/components/ui/background-boxes'
+import { cn } from '@/utils/cn'
 
 
 export default function Home() {
   return (
     <main className="text-white bg-gray-900  p-10 flex flex-col items-center">
-      <nav id="home" className="w-[80%] flex justify-between items-center mb-10">
-        <p className="font-bold font-helvetica italic text-blue-500 lg:text-5xl text-">TKN</p>
-        <ul className="hidden md:flex text-white gap-10 font-helvetica
-      ">
-          <li>
-            <a className="hover:text-blue-500 transition-all ease-in" href="#home">home</a>
-          </li>
-          <li>
-            <a className="hover:text-blue-500 transition-all ease-in" href="#tech">tech</a>
-          </li>
-          <li>
-            <a className="hover:text-blue-500 transition-all ease-in" href="#projects">projects</a>
-          </li>
-          <li>
-            <a className="hover:text-blue-500 transition-all ease-in" href="#contact">contact</a>
-          </li>
-        </ul>
-      </nav>
+      <div className='h-[550px] relative w-full overflow-hidden bg-slate-900 flex flex-col items-center pt-10'>
 
-      <div className="w-[80%] text-right my-10">
-        <h1 className="text-4xl lg:text-8xl  font-helvetica font-bold italic text-slate-200">
-          FULLSTACK DEVELOPER</h1>
-        <h2 className="text-2xl lg:text-8xl font-helvetica font-bold italic text-slate-300">
-          DAVI FREITAS</h2>
+        <div className="absolute inset-0 w-full h-full bg-slate-900 z-20 [mask-image:radial-gradient(transparent,white)] pointer-events-none" />
+        <nav id="home" className="w-[80%] flex justify-between items-center mb-10 z-20">
+          <p className="font-bold font-helvetica italic text-blue-500 lg:text-5xl text-">TKN</p>
+          <ul className="hidden md:flex text-white gap-10 font-helvetica
+      ">
+            <li>
+              <a className="hover:text-blue-500 transition-all ease-in" href="#home">home</a>
+            </li>
+            <li>
+              <a className="hover:text-blue-500 transition-all ease-in" href="#tech">tech</a>
+            </li>
+            <li>
+              <a className="hover:text-blue-500 transition-all ease-in" href="#projects">projects</a>
+            </li>
+            <li>
+              <a className="hover:text-blue-500 transition-all ease-in" href="#contact">contact</a>
+            </li>
+          </ul>
+        </nav>
+
+        <Boxes />
+        <h1 className={cn("md:text-4xl lg:text-6xl font-helvetica mt-24 font-bold italic text-white relative z-20")}>
+          DAVI FREITAS
+        </h1>
+        <p className="text-center mt-2 font-helvetica font-bold italic text-neutral-300 relative z-20">
+          FULLSTACK DEVELOPER
+        </p>
       </div>
 
-      <section className="w-[80%] my-10 pr-10 flex flex-col lg:flex-row justify-between ">
-        <div className="w-full md:w-[55%]  rounded-xl">
-          <img src="/svg/hero.svg" alt="Desenho de uma pessoa ao lado de um monitor pensando" />
-        </div>
-        <div className="w-full md:w-[40%]">
-          <h3 className="text-xl md:text-4xl font-bold mb-4">Hey 🤙🏼 Welcome!</h3>
-          <p className="text-sm md:text-xl text-left text-slate-200">I&apos;m
-            <b className="italic text-white hover:text-blue-500 hover:cursor-pointer">Davi</b> and I am a systems
+      <section className="w-[80%] my-10 pr-10 py-10 flex flex-col lg:flex-row justify-between ">
+        <div className="w-full">
+          <h3 className="text-xl md:text-4xl font-bold mb-4">Hey 🤙🏼</h3>
+          <p className="text-sm md:text-xl text-justify text-slate-200">I&apos;m
+            <b className="italic text-white hover:text-blue-500 hover:cursor-pointer"> Davi</b> and I am a systems
             developer
             passionate
             about technology.
